@@ -36,3 +36,7 @@ Delete from employee_payroll where first_name = 'Harsh'
 
 select city, state from employee_payroll where first_name = 'Shashi'
 
+--uc7 Retrive person by state or city
+
+select * from employee_payroll where city = 'Muzaffarpur' and  state = 'Bihar'
+
