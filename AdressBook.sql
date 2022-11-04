@@ -27,3 +27,7 @@ insert into employee_Payroll values
 update employee_payroll set zip = 800005 where first_name = 'Harsh'
 
 select * from employee_payroll
+
+--uc4 Ability To Dekete Using Name
+
+Delete from employee_payroll where first_name = 'Harsh'
