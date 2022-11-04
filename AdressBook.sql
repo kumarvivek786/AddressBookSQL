@@ -28,11 +28,16 @@ update employee_payroll set zip = 800005 where first_name = 'Harsh'
 
 select * from employee_payroll
 
---uc5 Ability To Dekete Using Name
+--uc5 Ability To Delete Using Name
 
 Delete from employee_payroll where first_name = 'Harsh'
 
---uc6 Retrive city state by name
 
-select city, state from employee_payroll where first_name = 'Shashi'
+--uc6 Retrive person by state or city
 
+select * from employee_payroll where city = 'Muzaffarpur' and  state = 'Bihar'
+
+--uc7 Count by city or state
+
+select state, City, count(State) as 'Count by State', count(City) as 'Count by City' from employee_payroll
+group by State, City;
