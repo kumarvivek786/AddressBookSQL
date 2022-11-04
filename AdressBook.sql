@@ -22,4 +22,8 @@ insert into employee_Payroll values
 ('Rakesh','kumar','Patliputra','patna','Bihar',800002,9912000001,'rakesh@gmail.com'),
 ('Harsh','kumar','Kankerbagh','Ara','Bihar',800003,9141253625,'Harsh@gmail.com');
 
+--uc4 Ability To Update Using Name
+
+update employee_payroll set zip = 800005 where first_name = 'Harsh'
+
 select * from employee_payroll
