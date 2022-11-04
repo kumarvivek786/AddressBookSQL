@@ -47,3 +47,11 @@ group by State, City;
 select * from employee_payroll
 where City = 'Patna'
 order by First_Name asc;
+
+--uc9
+--alter address book to add Name and Type
+Alter table employee_payroll
+Add Name varchar(100), Type varchar(100)
+
+update employee_payroll set Name = 'Friend',Type = 'FriendGroup' where First_Name in ('kumar');
+update employee_payroll set Name = 'Family',Type = 'FamilyGroup' where First_Name in ('shashi','rakesh');
