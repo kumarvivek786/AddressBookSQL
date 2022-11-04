@@ -28,6 +28,11 @@ update employee_payroll set zip = 800005 where first_name = 'Harsh'
 
 select * from employee_payroll
 
---uc4 Ability To Dekete Using Name
+--uc5 Ability To Dekete Using Name
 
 Delete from employee_payroll where first_name = 'Harsh'
+
+--uc6 Retrive city state by name
+
+select city, state from employee_payroll where first_name = 'Shashi'
+
