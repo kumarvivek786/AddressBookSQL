@@ -59,3 +59,8 @@ update employee_payroll set Name = 'Family',Type = 'FamilyGroup' where First_Nam
 --uc10
 --retieves count by type
 select count(First_Name) from employee_payroll where Type = 'FamilyGroup';
+
+--uc11 to add person in family and friend 
+insert into employee_payroll values
+('Rakesh','Mehta','Lane 4','Mumbai','Maharashtra',489856,9999999999,'rk123@gmail.com','Family','FamilyGroup'),
+('Rahul','Roy','K90/78 Allahabad','Allahabad','Uttar Pradesh',451207,8888888888,'rahul777@gmail.com','Friend','FriendGroup');
